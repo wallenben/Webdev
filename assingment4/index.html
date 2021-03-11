@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            School Project - PHP Form
+        </title>
+    </head>
+    <body>
+        <h1>
+            Technology for Sale
+        </h1>
+        <h2>Not real - for a school project</h2>
+        <p>Various sought-after computer parts can be found here.</p>
+        <form action="data.php" method="post" >
+        <table>
+            <tr>
+                <td>
+                    <img class = "img" src="3080.jpg" alt="GTX 3080">
+                </td>
+                <td>
+                    EVGA GTX 3080</br>
+                    Price - $1500.00</br>
+                    <label for="3080">Order Now:</label>
+                    <input type="checkbox" name="items[3080]" value="1500.00" id="3080"></input>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <img class = "img" src="ryzen.jpg" alt="Ryzen 9 3950X">
+                </td>
+                <td>
+                    Ryzen 9 3950X</br>
+                    Price - $729.00</br>
+                    <label for="ryzen">Order Now:</label>
+                    <input type="checkbox" name="items[ryzen]" value="729.00" id="ryzen"></input>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class = "img" src="ram.jpg" alt="G.Skill Trident Z Neo">
+                </td>
+                <td>
+                    Trident Z Neo 16gb RAM</br>
+                    Price - $129.00</br>
+                    <label for="ram">Order Now:</label>
+                    <input type="checkbox" name="items[ram]" value="129.00" id="ram"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class = "img" src="x570-e.jpg" alt="Asus ROG Strix X570-E">
+                </td>
+                <td>
+                    ROG Strix X570-E Motherboard</br>
+                    Price - $306.00</br>
+                    <label for="x570-e">Order Now:</label>
+                    <input type="checkbox" name="items[x570]" value="306.00" id="x570-e"></input>
+                </td>
+            </tr>
+        </table>
+        <fieldset>
+            <legend>Order Form</legend>
+            <label class="heading" for="firstname">First Name: </label>
+            <input type="text" name="firstname" id="firstname" /><br />
+
+            <label class="heading" for="lastname">Last Name: </label>
+            <input type="text" name="lastname" id="lastname" /><br />
+
+            <label class="heading" for="street">Street: </label>
+            <input type="text" name="street" id="street" size="40" /><br />
+
+            <label class="heading" for="city">City: </label>
+            <input type="text" name="city" id="city" /><br />
+
+            <label class="heading" for="state">State: </label>
+            <input type="text" name="state" id="state" /><br />
+
+            <label class="heading" for="zip">Zip: </label>
+            <input type="text" name="zip" id="zip" size="5"/><br />
+
+            <label class="heading">Credit Card: </label>
+            <label><input type="radio" name="credit" value="mc" />Mastercard</label>
+            <label><input type="radio" name="credit" value="visa" />Visa</label>
+            <label><input type="radio" name="credit" value="ae" />American Express</label> </br>
+        </fieldset>
+        <input type="submit" />
+    </form>
+    </body>
+</html>
