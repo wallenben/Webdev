@@ -1,0 +1,70 @@
+/*
+Written by Ben Wallen
+
+Error 1 in the HTML checker is due to the site being unable to find
+the CSS file. 
+Error 2 is due to the formatting done in assingment 1, unsure
+if we are supposed to change that..
+*/
+h2 {color: red;}
+a:hover{
+    color: red;
+}
+    h1 {
+        color: blue;
+        text-align: center;
+      }
+      ul{
+        list-style-type: square;
+      }
+      .list1 {
+          list-style-type: disc;
+      }
+      .list2{
+        list-style-type: square;
+      }
+      .list3{
+        list-style-type: circle;
+      }
+      .listdefault{
+        list-style-type: "\1F37F";
+      }
+      #movies{
+          color: purple;
+          font-family: "Comic Sans MS";
+      }
+      #hobbies{
+        color: red;
+        font-family: "Arial";
+      }
+      #websites{
+        color: green;
+        font-family: "Times New Roman";
+      }
+      .z{
+          border-style: solid;
+          border-color: black;
+          width: 25%;
+      }
+      .tdscheduletable{
+          background-color: yellow;
+          text-align: center;
+      }
+      .thscheduletable{
+        background-color: yellow;
+    }
+    .calc{
+        color:blue;
+    }
+    .cs2{
+        color:rebeccapurple;
+    }
+    .linux{
+        color:hotpink;
+    }
+    .webdev{
+        color:palegreen;
+    }
+    #unique{
+        color:red;
+    }
