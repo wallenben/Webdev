@@ -1,0 +1,50 @@
+.img{
+    width: 200px;
+}
+table {
+	border: 2px solid black;
+	border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.heading {
+	font-family: "Tahoma", "Verdana", sans-serif;
+    font-size: 12pt;
+    padding: 30px;
+    margin: 5px 5px;
+    text-align: left;
+}
+.form {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    padding: 30px;
+    width: 100%;
+    border: 2px solid #555;
+}
+.input {
+    text-align: center;
+    padding: 5px;
+    margin: 5px 15px;
+}
+  #submitNoOverridePlease {
+    background-color: #718bdf;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+  h1{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  p{
+      font-size: 20px;
+  }
+  body {
+    background-color: #84e6c5;
+   }
+   .x{
+       text-align: left;
+   }

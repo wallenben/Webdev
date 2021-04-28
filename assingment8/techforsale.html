@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <link rel="stylesheet" href="techstyle.css">
+        <title>
+            School Project - PHP Form
+        </title>
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <h1>
+            Technology for Sale
+        </h1>
+        <h2>Not real - for a school project</h2>
+        <p>Various sought-after computer parts can be found here.</p>
+        <form name="orderForm" action="ordersummary.php" method="post" >
+        <table>
+            <tr>
+                <td>
+                    <img class = "img" src="3080.jpg" alt="GTX 3080">
+                </td>
+                <td>
+                    EVGA GTX 3080<br>
+                    Price - $1500.00<br>
+                    <label for="3080">Order Now:</label>
+                    <input type="checkbox" name="items[EVGA GTX 3080]" value="1500.00" id="3080" class="items"/>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <img class = "img" src="ryzen.jpg" alt="Ryzen 9 3950X">
+                </td>
+                <td>
+                    Ryzen 9 3950X<br>
+                    Price - $729.00<br>
+                    <label for="ryzen">Order Now:</label>
+                    <input type="checkbox" name="items[Ryzen 9 3950X]" value="729.00" id="ryzen" class="items"/>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class = "img" src="ram.jpg" alt="G.Skill Trident Z Neo">
+                </td>
+                <td>
+                    Trident Z Neo 16gb RAM<br>
+                    Price - $129.00<br>
+                    <label for="ram">Order Now:</label>
+                    <input type="checkbox" name="items[G.Skill Trident Z Neo]" value="129.00" id="ram" class="items"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class = "img" src="x570-e.jpg" alt="Asus ROG Strix X570-E">
+                </td>
+                <td>
+                    ROG Strix X570-E Motherboard<br>
+                    Price - $306.00<br>
+                    <label for="x570-e">Order Now:</label>
+                    <input type="checkbox" name="items[Asus ROG Strix X570-E]" value="306.00" id="x570-e" class="items"/>
+                </td>
+            </tr>
+        </table>
+        <fieldset class = "form">
+            <legend>Order Form</legend>
+            <label class="heading" for="firstname" id="fnameLabel">First Name: </label>
+            <input class="input" type="text" name="firstname" id="firstname" /><br />
+
+            <label class="heading" for="lastname" id="lnameLabel">Last Name: </label>
+            <input class="input" type="text" name="lastname" id="lastname" /><br />
+
+            <label class="heading" for="street" id="streetLabel">Street: </label>
+            <input class="input" type="text" name="street" id="street" size="40" /><br />
+
+            <label class="heading" for="city" id="cityLabel">City: </label>
+            <input class="input" type="text" name="city" id="city" /><br />
+
+            <label class="heading" for="state">State: </label>
+            <input class="input" type="text" name="state" id="state" /><br />
+
+            <label class="heading" for="zip">Zip: </label>
+            <input class="input" type="text" name="zip" id="zip" size="5"/><br />
+
+            <label class="heading">Credit Card: </label>
+            <label><input type="radio" name="credit" value="mc" />Mastercard</label>
+            <label><input type="radio" name="credit" value="visa" />Visa</label>
+            <label><input type="radio" name="credit" value="ae" />American Express</label> <br>
+            <!-- This is overriding the JS function submit(). As such, I added a funny name.-->
+            <button type="button" id="submitNoOverridePlease" onclick="submitForm()">Place Order </button>
+        </fieldset>
+        
+    </form>
+    </body>
+</html>

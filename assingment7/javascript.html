@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Assingment 6 - written by Ben Wallen
+This html file depicts basic JavaScript functionality.
+Written 04/07/21-->
+<html lang="en">
+
+<head>
+    <title>Assingment 6 - Ben Wallen</title>
+</head>
+
+<body>
+    <p>Problems 1 and 2: Add / Change text</p>
+    <button onclick="myFunction()">Add text</button>
+    <button onclick="changeFunction()">Change text</button>
+    <p id="p1"></p>
+    <p>Problem 3: Display date and time.</p>
+    <button onclick="changeDate()">Click to display date and time.</button>
+    <p id="date"></p>
+    <p>Problem 4: Create an IMG element</p>
+    <button onclick="showImage()">Click to create an image</button>
+    <p>Problem 5: Change the IMG element</p>
+    <button onclick="changeImage()">Click to change the image</button>
+    <br>
+    <img id="image" src="null" alt="">
+    <script>
+        //functions accessed by <p> tag IDs
+        //innerHTML changes text, .setattribute params for more specific changes e.g. images
+        function myFunction() {
+            document.getElementById("p1").innerHTML = "Text has been added";
+        }
+        function changeFunction() {
+            document.getElementById("p1").innerHTML = "Text has been changed.";
+        }
+        function changeDate() {
+            document.getElementById("date").innerHTML = Date();
+        }
+        function showImage() {
+            document.getElementById("image").setAttribute("src", "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+        }
+        function changeImage() {
+            document.getElementById("image").setAttribute("src", "https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage.png")
+        }
+    </script>
+
+</body>
+
+</html>

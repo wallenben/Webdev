@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="EN">
+	<head>
+		<title>JavaScript Assignment - Caleb Sinner </title>
+		<meta charset="UTF-8" />
+		
+		<!--This will be the main script that houses all of the functions/buttons-->
+		<script>
+			//This will add text to the paragraph
+			function addContent() {
+				document.getElementById("paragraphChange").innerHTML += "This will be added to the website's paragraph. ";
+			}
+		
+			//This will change properties of the text in the paragraph
+			function alterContent() {
+				document.getElementById("paragraphChange").innerHTML =  "Look at me! I'm different! ";
+			}
+		
+			//Return"s today's date
+			function dateFunction() {
+				var my_time = new Date();
+				document.getElementById("display").innerHTML=my_time;
+			}
+		
+			//Presents an image forward
+			function imageAddition() {
+				document.getElementById("image1").setAttribute("src", "./image1.jpg");
+			}
+		
+			//Changes the image to a different one
+			function imageChange() {
+				var image = document.getElementById("image1");
+				image.setAttribute("alt", "..I Care Because You Do altered");
+				image.setAttribute("src", "./image2.jpg");
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h1>Caleb's First JS Website</h1><br />
+		<!--Below is the first button implementation -->
+		
+		<!--The two buttons will add/change text seen in the functions above -->
+		<p>Part 1/2: Adding or Changing Text</p>
+			<input type=button value="Add Text" onClick="addContent();" />
+			<input type=button value="Alter Text" onClick="alterContent();" />
+			<p id=paragraphChange></p>
+		<!--The third button will give the date, time and the time zone one's computer clock is registered in -->
+		<p>Part 3: Giving Today's Date</p>
+			<input type=button value="Show Time" onClick="dateFunction();" />
+			<p id=display ></p>
+		<!--The fourth button will display a picture -->
+		<p>Part 4: Display a Picture</p>
+			<input type=button value="Display Picture" onClick="imageAddition();" />
+		<!--The fifth and final button will change the picture above to a different one -->
+		<p>Part 5: Change the Picture</p>
+			<input type=button value="Change Picture" onClick="imageChange();" />
+			<img id="image1"/>
+	</body>
+</html>
